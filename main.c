@@ -14,16 +14,20 @@ int main(void) {
     };
     case 7: {
       printf("\nFirst");
+      break;
     }
     case 6: {
       printf("\nSecond");
+      break;
     }
     case 5: {
       printf("\nThird");
+      break;
     }
     
     default: {
       printf("\nFailed");
+      break;
     }
   }
 }
