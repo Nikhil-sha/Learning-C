@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(void) {
-  float a;
+  int a;
   printf("Enter you cgpa: ");
-  scanf("%f", &a);
+  scanf("%d", &a);
   
   switch (a) {
     case 10:
