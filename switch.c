@@ -5,12 +5,12 @@ int main(void) {
 	scanf("%d", &age);
 	
 	switch(age) {
-		case < 18: {
+		case (<18): {
 			printf("Oh! You are not eligible for a D.L.");
 			break;
 		};
 		
-		case >= 18: {
+		case (>=18): {
 			printf("Yay! You are eligible for a D.L.");
 			break;
 		}
