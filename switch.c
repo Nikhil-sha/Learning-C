@@ -4,16 +4,16 @@ int main(void) {
 	int a, b, res;
 	char op;
 	printf("Enter (number)(operator)(number): ");
-	scanf("%d%c%d", &a, &op, &b);
+	scanf("%d %c %d", &a, &op, &b);
 	switch(op) {
-		case "+": {
+		case '+': {
 			res = a + b;
-			printf("the sum is %d", res);
+			printf("the sum is %d\n", res);
 			break;
 		}
-		case "-": {
+		case '-': {
 			res = a - b;
-			printf("the difference is %d", res);
+			printf("the difference is %d\n", res);
 			break;
 		}
 	}
