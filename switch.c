@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main(void) {
-	int a, b, op, res;
-	printf("Enter (number)(operator)(number): ")
+	int a, b, res;
+	char op;
+	printf("Enter (number)(operator)(number): ");
 	scanf("%d%c%d", &a, &op, &b);
 	switch (op) {
 		case "+": {
