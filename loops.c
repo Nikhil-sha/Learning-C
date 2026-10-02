@@ -2,7 +2,7 @@
 
 int main(void) {
 	for (int f = 0; f <= 10; f++) {
-		printf("[for loop] Hello %d time(s).\n", i);
+		printf("[for loop] Hello %d time(s).\n", f);
 	}
 	
 	printf("\n");
@@ -17,9 +17,9 @@ int main(void) {
 	
 	int dw = 0;
 	do {
-		printf("[do while loop] Hello %d time(s).\n", i);
+		printf("[do while loop] Hello %d time(s).\n", dw);
 		dw++;
-	} while (dw <= 10)
+	} while (dw <= 10);
 	
 	return 0;
 }
