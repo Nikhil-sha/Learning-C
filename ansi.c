@@ -2,5 +2,5 @@
 #include "ansi.h"
 
 int main() {
-  printf(ANSI_UNDERLINE + "Hello!" + ANSI_RESET);
+  printf(ANSI_UNDERLINE "Hello!" ANSI_RESET);
 }
