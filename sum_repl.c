@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int input, sum;
+  int input, sum = 0;
   
   do {
     printf("Enter a number to add OR Enter 0 to exit\n");
