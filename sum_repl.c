@@ -9,6 +9,6 @@ int main() {
     sum = sum + input;
   } while (input != 0);
   
-  printf("The total sum is: %d", sum);
+  if (sum != 0) printf("The total sum is: %d", sum);
   return 1;
 }
