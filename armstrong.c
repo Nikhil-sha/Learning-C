@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
 	int input = 0, calcdNum = 0, extDig, inputRef;
@@ -13,7 +12,7 @@ int main() {
 		extDig = input % 10;
 		input = input / 10;
 		
-		calcdNum += pow(extDig, 3);
+		calcdNum += (extDig * extDig * extDig);
 	} while (input != 0);
 	
 	if (calcdNum == inputRef) printf("%d is an Armstrong number", inputRef);
