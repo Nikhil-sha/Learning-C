@@ -3,6 +3,7 @@
 
 int main() {
 	int input = 0, calcdNum = 0, extDig, inputRef;
+	
 	printf("Enter a three digit number:");
 	scanf("%d", &input);
 	
