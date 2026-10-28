@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main() {
-	const input = 0, calcdNum = 0, extDig, inputRef;
+	int input = 0, calcdNum = 0, extDig, inputRef;
 	printf("Enter a three digit number:");
 	scanf("%d", &input);
 	
