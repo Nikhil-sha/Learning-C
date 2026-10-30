@@ -19,7 +19,7 @@ int main() {
 	inputRef = input;
 	
 	while (input != 0) {
-	  input = input % 10;
+	  input = input / 10;
 	  digits++;
 	}
 	
