@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int pow(base, expt) {
+int power(base, expt) {
   int result = base;
   
   for (int i = 0; i < expt; i++) {
@@ -29,7 +29,7 @@ int main() {
 		extDig = input % 10;
 		input = input / 10;
 		
-		calcdNum += pow(extDig, digits);
+		calcdNum += power(extDig, digits);
 	}
 	
 	if (calcdNum == inputRef) printf("%d is an Armstrong number", inputRef);
