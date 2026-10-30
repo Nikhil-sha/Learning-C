@@ -1,20 +1,39 @@
 #include <stdio.h>
 
+int pow(base, expt) {
+  int result = base;
+  
+  for (int i = 0; i < expt; i++) {
+    result = result * base;
+  }
+  
+  return result;
+}
+
 int main() {
-	int input = 0, calcdNum = 0, extDig, inputRef;
+	int input = 0, digits, calcdNum = 0, extDig, inputRef;
 	
 	printf("Enter a three digit number:");
 	scanf("%d", &input);
 	
 	inputRef = input;
 	
-	do {
+	while (input != 0) {
+	  input = input % 10;
+	  digits++;
+	}
+	
+	input = inputRef;
+	
+	while (input != 0) {
 		extDig = input % 10;
 		input = input / 10;
 		
-		calcdNum += (extDig * extDig * extDig);
-	} while (input != 0);
+		calcdNum += pow(extDig, digits);
+	}
 	
 	if (calcdNum == inputRef) printf("%d is an Armstrong number", inputRef);
 	else printf("%d isn't an Armstrong number", inputRef);
+	
+	return 0;
 }
