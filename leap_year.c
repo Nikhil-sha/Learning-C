@@ -7,10 +7,12 @@ int main() {
   
   if ((input/100) != 0) {
     if ((input/400) == 0) {
-      if ((input/4) == 0) {
-        printf("It's a leap year!");
-        return 0;
-      }
+      printf("It's a leap year!");
+      return 0;
+    }
+    if ((input/4) == 0) {
+      printf("It's a leap year!");
+      return 0;
     }
   }
   
