@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int power(base, expt) {
+int power(int base, int expt) {
   int result = base;
   
   for (int i = 0; i < expt; i++) {
@@ -11,7 +11,7 @@ int power(base, expt) {
 }
 
 int main() {
-	int input = 0, digits, calcdNum = 0, extDig, inputRef;
+	int input = 0, digits = 0, calcdNum = 0, extDig, inputRef;
 	
 	printf("Enter a three digit number:");
 	scanf("%d", &input);
