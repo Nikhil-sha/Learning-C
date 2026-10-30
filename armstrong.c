@@ -7,6 +7,7 @@ int power(int base, int expt) {
     result = result * base;
   }
   
+  printf("%d to the power of %d = %d", base, expt, result);
   return result;
 }
 
